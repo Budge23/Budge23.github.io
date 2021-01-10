@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@800&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  font-family: 'Spartan', sans-serif;
+  background-color: #373741;
+  color: #ff9d8e
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.intro {
+  margin-top: 60px;
+  height: 100vh;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  background: linear-gradient(rgba(55, 55, 65, 0.783), rgba(55, 55, 65, 0.783)) ,url('../img/london-aerial-thames-guide.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+
+
+  .title{
+    display: flex;
+    flex:1;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 50px;
+    img{
+      height: 2em;
+    }
+
+    h5{
+      text-align: center;
+      font-size: 30px;
+      line-height: 50px;
+    }
+  }
+
+  .scrolldown{
+    display: flex;
+    font-size: 100px;
+  }
+}
+
+.top {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex: 1;
+  
+
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+  margin-left: 10%;
+  margin-right: 5%;
+
+  .pic {
+    height: 10em;
+    border-radius: 10%;
+  }
+
+  p{
+    font-size: smaller;
+  }
+
+  h3,
+  p {
+    color: white;
+    line-height: 30px;
+  }
+
+  .aboutMe {
+    display: flex;
+    flex-direction: column;
+
+  }
+
+}
+
+.s-port {
+  display: flex;
+  flex-direction: column;
+  flex: 1.5;
+  margin-right: 10%;
+  margin-top: 5%;
+  justify-content: center;
+  justify-content: flex-start;
+  text-align: center;
+
+
+  .skillstitle,
+  .projects {
+    background-color: #ff9d8e;
+    color: black;
+    text-align: left;
+    padding-left: 5%;
+  }
+
+  .icons {
+
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    flex:1;
+  }
+
+}
+
+.devicon {
+  background-color: white;
+  padding-bottom: 1em;
+  svg {
+    max-width: 10em;
+    padding: 1em;
+  }
+
+
+}
+
+.devicon path {
+  fill: #ff9d8e;
+}
+
+
+
+.nav {
+  background-color: #ff9d8e;
+  color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items:center;
+  justify-content: space-between;
+
+  .logo{
+    height: 3em;
+    margin-left: 1em;
+  }
+  a{
+    text-decoration: none;
+    color: white
+  }
+
+  a:hover{
+    color: #373741;
+  }
+
+  ul{
+    display:flex;
+    list-style-type: none;
+    justify-content: flex-end;
+
+    li{
+      padding-left: 1em;
+      padding-right: 1em;
+    }
+  }
+}
+
+
+
+.projects {
+  text-align: center;
+  margin: 5em;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 2000px) {
+
+  .devicon {
+    svg {
+      max-width: 5em;
+      padding: 0.5em;
+    }
+  }
+}
+
+
+@media only screen and (max-width: 850px) {
+  .top {
+    flex-direction: column;
+
+    .s-port {
+      margin-left: 10%;
+      margin-right: 5%;
+    }
+  }
+
+  .pic {
+    height: 10em;
+    border-radius: 10%;
+  }
+
+
+  .devicon {
+    svg {
+      max-width: 5em;
+      padding: 0.5em;
+    }
+  }
+}
