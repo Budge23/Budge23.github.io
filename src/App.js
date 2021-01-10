@@ -9,14 +9,16 @@ import Home from './components/Home'
 import NavBar from './components/NavBar'
 
 
-const App = () => (
-  <BrowserRouter>
-    <NavBar /> 
-    <Switch>
-      <Route exact path="/" component={Home}/>
-    </Switch>
-  </BrowserRouter>
-)
+const App = () => {
+  return <>
+    <NavBar />
+    <Home /> 
+  </>
+}
+
+
+
+
 
 
 
