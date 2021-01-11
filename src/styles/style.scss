@@ -44,12 +44,18 @@ body {
       text-align: center;
       font-size: 30px;
       line-height: 50px;
+      margin-bottom: 0%;
     }
   }
 
   .scrolldown{
     display: flex;
     font-size: 100px;
+  }
+
+  a{
+    color: #ff9d8e;
+    text-decoration: none;
   }
 }
 

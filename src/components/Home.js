@@ -13,9 +13,7 @@ const Home = () => {
         </div>
         <h5><Typist>Lee Burgess</Typist> <br/> Junior Software Developer - London</h5>
         <a href='#about'>
-          <div>
-            <img src={downGif} />
-          </div>
+        ↓
         </a>
 
 
