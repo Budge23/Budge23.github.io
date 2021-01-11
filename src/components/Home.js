@@ -8,9 +8,7 @@ const Home = () => {
   return <main>
     <section className='intro'>
       <div className='title'>
-        <div>
-          
-        </div>
+    
         <h5><Typist>Lee Burgess</Typist> <br/> Junior Software Developer - London</h5>
         <a href='#about'>
         ↓
