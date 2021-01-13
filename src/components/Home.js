@@ -26,12 +26,11 @@ const Home = () => {
         <div className='aboutMe'>
           <h2>PROFILE</h2>
           <p>
-            Despite my previous roles being business development focused, they quickly developed into supporting the team with the creation and deployment of marketing tech stacks. <br /><br />
-
-        When I realised I was enjoying automating the repetitive tasks that took up a disproportionate amount of time, that's where my passion for coding was sparked.I made the transition and decided to focus on my career change and start my software development course with General Assembly. <br /><br />
-
-        With a background in sales and growth marketing, I am looking to work in a collaborative team which allows me to not only develop and learn from others but to also bring previous experience to the table.
-          </p>
+            On completion of my software engineering immersive course with General Assembly, I was invited and accepted the offer to join the team as a teaching assistant for the next cohort of students.
+            <br /><br />
+My background is business development and sales, where my roles developed into the creation and deployment of marketing tech stacks as well as growing business pipeline.
+            <br /><br />
+I believe that my combination of sales and software capabilities gives me a unique offering to my future employers. I am looking to work with a collaborative team where I can add value, learn, and progress in my career.</p>
         </div>
       </section>
 
