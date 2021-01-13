@@ -1,17 +1,17 @@
 import React from 'react'
 import Typist from 'react-typist'
-import profilePic from '../img/Lee.jpeg'
-import downGif from '../img/downarrow.gif'
+import project1 from '../img/projects/8bit-battleships.png'
+import avatar from '../img/portfolio.png'
 
 const Home = () => {
 
   return <main>
     <section className='intro'>
       <div className='title'>
-    
-        <h5><Typist>Lee Burgess</Typist> <br/> Junior Software Developer - London</h5>
+
+        <h5><Typist>Lee Burgess</Typist> <br /> Junior Software Developer - London</h5>
         <a href='#about'>
-        ↓
+          <img src={avatar} style={{ height: '30vh' }} />
         </a>
 
 
@@ -21,7 +21,6 @@ const Home = () => {
       <section className='about' id='about'>
         <div className='name'>
           <h1>LEE BURGESS</h1>
-          <img src={profilePic} className='pic' />
           <h3>JUNIOR SOFTWARE DEVELOPER</h3>
         </div>
         <div className='aboutMe'>
@@ -95,7 +94,16 @@ const Home = () => {
 
     <section className='projects'>
       <h2>PROJECTS</h2>
-
+      <div className='bulk-proj'>
+        <div className='topRow'>
+          <img src={project1} className='proj1' />
+          <img src={project1} className='proj2' />
+        </div>
+        <div className='bottomRow'>
+          <img src={project1} className='proj3' />
+          <img src={project1} className='proj4' />
+        </div>
+      </div>
     </section>
   </main>
 

@@ -24,9 +24,6 @@ body {
   flex-direction: column;
   align-items: center;
   justify-items: center;
-  background: linear-gradient(rgba(55, 55, 65, 0.783), rgba(55, 55, 65, 0.783)) ,url('../img/london-aerial-thames-guide.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
 
 
   .title{
@@ -103,17 +100,16 @@ body {
   display: flex;
   flex-direction: column;
   flex: 1.5;
-  margin-right: 10%;
+  margin: 2em;
   margin-top: 5%;
   justify-content: center;
   justify-content: flex-start;
   text-align: center;
 
 
-  .skillstitle,
-  .projects {
+  .skillstitle {
     background-color: #ff9d8e;
-    color: black;
+    color: white;
     text-align: left;
     padding-left: 5%;
   }
@@ -186,6 +182,35 @@ body {
 .projects {
   text-align: center;
   margin: 5em;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+
+  h2 {
+    background-color: #ff9d8e;
+    color:white;
+    margin:0;
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+
+  .bulk-proj{
+    display:flex;
+    flex-direction: column;
+
+    .topRow, .bottomRow{
+      display:flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+
+      img {
+        width:33vw;
+        padding: 0.5vw;
+      }
+    }
+
+  }
 }
 
 
@@ -201,25 +226,36 @@ body {
       padding: 0.5em;
     }
   }
+ 
+ 
 }
 
 
 @media only screen and (max-width: 850px) {
   .top {
     flex-direction: column;
-
-    .s-port {
-      margin-left: 10%;
-      margin-right: 5%;
-    }
   }
 
   .pic {
     height: 10em;
     border-radius: 10%;
   }
-
-
+  .projects{
+    margin: 2em;
+    .bulk-proj{
+      justify-content: center;
+      justify-items: center;
+      align-items: center;
+      .topRow, .bottomRow{
+        flex-direction: column;
+        img {
+          width:80vw;
+          padding: 1vw;
+        }
+      }
+    }
+   
+  }
   .devicon {
     svg {
       max-width: 5em;
