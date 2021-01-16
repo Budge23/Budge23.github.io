@@ -347,6 +347,57 @@ body {
     }
    
   }
+
+  .infoblock {
+    display: flex;
+    flex-direction: column;
+    width:100%;
+  
+    .topRow, .bottomRow{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      flex:1;
+  
+    }
+  
+  
+    .square1, .square4 {
+      flex:1;
+   
+    }
+  
+    .square2, .square3 {
+      flex:1;
+      color: #373741;
+      padding:0em;
+    }
+  
+    .square1{
+      color: #373741;
+      padding: 0em;
+      font-size: small;
+      line-height: 1.5em;
+    }
+  
+    .square4{
+      color:#ff9d8e;
+      margin-bottom: 0em;
+        svg {
+          width: 5em;
+          padding-left: 0.1em;
+          padding-right: 0.1em;
+        }
+      
+      
+      }
+      
+      .square4 path {
+        fill: #ff9d8e;
+  
+    }
+  
+  }
   .devicon {
     svg {
       max-width: 5em;
