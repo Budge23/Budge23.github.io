@@ -145,7 +145,6 @@ body {
 .nav {
   background-color: #ff9d8e;
   color: white;
-  position: fixed;
   top: 0;
   width: 100%;
   display: flex;
@@ -183,27 +182,56 @@ body {
   display: flex;
   flex-direction: column;
   width:100%;
+
   .topRow, .bottomRow{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    flex:1;
 
   }
 
 
   .square1, .square4 {
-    flex:3;
+    flex:1;
+ 
   }
 
   .square2, .square3 {
     flex:1;
+    color: #373741;
+    padding:1em;
+  }
+
+  .square1{
+    color: #373741;
+    padding: 2em;
+    font-size: small;
+    line-height: 1.5em;
+  }
+
+  .square4{
+    color:#ff9d8e;
+    margin-bottom: 1em;
+      svg {
+        width: 5em;
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+      }
+    
+    
+    }
+    
+    .square4 path {
+      fill: #ff9d8e;
+
   }
 
 }
 
 .projects {
   text-align: center;
-  margin: 5em;
+  margin: 2em;
   display: flex;
   flex-direction: column;
   background-color: white;
