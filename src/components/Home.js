@@ -44,6 +44,7 @@ const Home = () => {
         <div className='name'>
           <h1>LEE BURGESS</h1>
           <h3>JUNIOR SOFTWARE DEVELOPER</h3>
+
         </div>
         <div className='aboutMe'>
           <h2>PROFILE</h2>
