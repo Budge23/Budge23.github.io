@@ -145,7 +145,7 @@ body {
 .nav {
   background-color: #ff9d8e;
   color: white;
-
+  position: fixed;
   top: 0;
   width: 100%;
   display: flex;
@@ -179,6 +179,27 @@ body {
 }
 
 
+.infoblock {
+  display: flex;
+  flex-direction: column;
+  width:100%;
+  .topRow, .bottomRow{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+  }
+
+
+  .square1, .square4 {
+    flex:3;
+  }
+
+  .square2, .square3 {
+    flex:1;
+  }
+
+}
 
 .projects {
   text-align: center;
@@ -186,7 +207,6 @@ body {
   display: flex;
   flex-direction: column;
   background-color: white;
-  height: 90vh;
 
   h2 {
     background-color: #ff9d8e;
@@ -199,14 +219,12 @@ body {
   .bulk-proj{
     display:flex;
     flex-direction: column;
-    flex:1;
 
     .topRow, .bottomRow{
       display:flex;
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: space-evenly;
-      flex:1;
 
       img {
         width:33vw;
@@ -214,7 +232,7 @@ body {
       }
 
       .proj1, .proj4 {
-        flex: 1;
+        flex: 3;
         border: 2px #373741 solid;
       }
       .proj3, .proj2 {
@@ -234,27 +252,6 @@ body {
         display:flex;
         flex-direction: column;
         align-items: center;
-
-        .react-card-flip{
-          width: 100%;
-          z-index: 1;
-        }
-
-        .flipBack1{
-          width: 33vw;
-          text-align: left;
-          color: black;
-          padding-left: 0.2em;
-          padding-right: 0.2em;
-          margin:0%;
-          width: initial;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          p span{
-            color:#ff9d8e
-          }
-        }
 
         h3 {
           background-color: #ff9d8e;
@@ -308,37 +305,7 @@ body {
         flex-direction: column;
         width: 100%;
         .proj3, .proj2, .proj1, .proj4 {
-          display:flex;
-          flex-direction: column;
-          align-items: center;
-  
-          .react-card-flip{
-            width: 100%;
-            z-index: 1;
-          }
-  
-          .flipBack1{
-            width: fit-content;
-            height: 36vh;
-            text-align: left;
-            color: black;
-            padding-left: 0.2em;
-            padding-right: 0.2em;
-            margin:0%;
-  
-            p span{
-              color:#ff9d8e
-            }
-          }
-  
-          h3 {
-            background-color: #ff9d8e;
-            color: white;
-            width: 100%;
-            margin: 0%;
-            padding-top: 0.5em;
-            padding-bottom: 0.5em;
-          }
+          border: none;
         }
         img {
           width:80vw;

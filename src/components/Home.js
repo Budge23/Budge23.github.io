@@ -5,13 +5,15 @@ import project2 from '../img/projects/Quizzical.png'
 import project3 from '../img/projects/FindaPint.png'
 import project4 from '../img/projects/Spoondr.png'
 import avatar from '../img/portfolio.png'
-import ReactCardFlip from 'react-card-flip'
 
 const Home = () => {
-  const [flipped1, updateFlipped1] = useState(false)
-  const [flipped2, updateFlipped2] = useState(false)
-  const [flipped3, updateFlipped3] = useState(false)
-  const [flipped4, updateFlipped4] = useState(false)
+  const [active1, updateActive1] = useState(false)
+  const [active2, updateActive2] = useState(false)
+  const [active3, updateActive3] = useState(false)
+  const [active4, updateActive4] = useState(false)
+
+  console.log(!active2 || !active3 || !active4)
+
 
   return <main>
     <section className='intro'>
@@ -98,70 +100,137 @@ I believe that my combination of sales and software capabilities gives me a uniq
       </section>
     </section>
 
-
     <section className='projects'>
       <h2>PROJECTS</h2>
       <div className='bulk-proj'>
         <div className='topRow'>
-
-          <div className='proj3'>
-            <h3>FindaPint</h3>
-            <ReactCardFlip isFlipped={flipped1} flipDirection="vertical">
-              <div className='flip1'>
-                <img src={project3} onClick={() => updateFlipped1(true)} />
+          {(() => {
+            if (active1) {
+              return <div className='infoblock' onClick={() => updateActive1(false)} >
+                <h2>FindaPint</h2>
+                <div className='topRow'>
+                  <div className='square1'>
+                    <img src={project3} />
+                  </div>
+                  <div className='square2'>
+                    <img src={project3} />
+                  </div>
+                </div>
+                <div className='bottomRow'>
+                  <div className='square3'>
+                    <img src={project3} />
+                  </div>
+                  <div className='square4'>
+                    <img src={project3} />
+                  </div>
+                </div>
               </div>
-              <div className='flipBack1' onClick={() => updateFlipped1(false)}>
-                <p><strong>FindaPint:</strong><br /><br />Inspired by post-lockdown pubs and bars who offered options such as outdoor-seating and take-away pints.<br /> <br /> This app allowed landlords to showcase their pub and its features allowing users to search based on what was most important to them.<br /><br />
-An 8-day group-based project with two others, using <span>Mongoose</span> and <span>MongoDB</span> to create the back end, <span>React JS</span> in the front end. Completed with a <span>content management system</span> and transactional email system.</p>
-
+            } else if (!active2 && !active3 && !active4) {
+              return <div className='proj3' onClick={() => updateActive1(true)}>
+                <h3>FindaPint</h3>
+                <img src={project3} />
               </div>
-            </ReactCardFlip>
-          </div>
+            } else {
+              return
+            }
+          })()}
 
-
-          <div className='proj4'>
-            <h3>Spoondr</h3>
-            <ReactCardFlip isFlipped={flipped2} flipDirection="vertical">
-              <div className='flip1'>
-                <img src={project4} onClick={() => updateFlipped2(true)} />
+          {(() => {
+            if (active2) {
+              return <div className='infoblock' onClick={() => updateActive2(false)} >
+                <h2>Spoondr</h2>
+                <div className='topRow'>
+                  <div className='square1'>
+                    <img src={project3} />
+                  </div>
+                  <div className='square2'>
+                    <img src={project3} />
+                  </div>
+                </div>
+                <div className='bottomRow'>
+                  <div className='square3'>
+                    <img src={project3} />
+                  </div>
+                  <div className='square4'>
+                    <img src={project3} />
+                  </div>
+                </div>
               </div>
-              <div className='flipBack1' onClick={() => updateFlipped2(false)}>
-                <p><strong>Spoondr:</strong><br /><br /> A dating app which allows users to choose preferences and match with others based on their interests. Once matched, the users can enter into a <span>real-time chat</span>.<br /><br />
-A 9-day group-based project with two others, using <span>SQLAlchemy</span>, <span>Flask</span> and <span>Python</span> on the back end and <span>React JS</span> front end.</p>
+            } else if (!active1 && !active3 && !active4) {
+              return <div className='proj4' onClick={() => updateActive2(true)}>
+                <h3>Spoondr</h3>
+                <img src={project4} />
               </div>
-            </ReactCardFlip>
-          </div>
+            } else {
+              return
+            }
+          })()}
         </div>
         <div className='bottomRow'>
-          <div className='proj1'>
-            <h3>8-Bit Battleships</h3>
-            <ReactCardFlip isFlipped={flipped3} flipDirection="vertical">
-              <div className='flip1'>
-                <img src={project1} onClick={() => updateFlipped3(true)} />
+          {(() => {
+            if (active3) {
+              return <div className='infoblock' onClick={() => updateActive3(false)} >
+                <h2>bitBattleships</h2>
+                <div className='topRow'>
+                  <div className='square1'>
+                    <img src={project3} />
+                  </div>
+                  <div className='square2'>
+                    <img src={project3} />
+                  </div>
+                </div>
+                <div className='bottomRow'>
+                  <div className='square3'>
+                    <img src={project3} />
+                  </div>
+                  <div className='square4'>
+                    <img src={project3} />
+                  </div>
+                </div>
               </div>
-              <div className='flipBack1' onClick={() => updateFlipped3(false)}>
-                <p><strong>8bit-Battleships:</strong> Based on the classic game of battleships. A solo, 7-day web-based game featuring smart AI.<br /><br /> This was created in <span>pure Javascript</span>. My key focus was to create an <span>intelligent AI</span> system which would base its choices on previous data.<br /><br /> When placing the ships the users are able to <span>drag and drop</span> them into areas of their choice both horizontal and vertical. </p>
+            } else if (!active1 && !active2 && !active4) {
+              return <div className='proj1' onClick={() => updateActive3(true)}>
+                <h3>8-bitBattleships</h3>
+                <img src={project1} />
               </div>
-            </ReactCardFlip>
-          </div>
-
-          <div className='proj2'>
-            <h3>Quizzical</h3>
-            <ReactCardFlip isFlipped={flipped4} flipDirection="vertical">
-              <div className='flip1'>
-                <img src={project2} onClick={() => updateFlipped4(true)} />
+            } else {
+              return
+            }
+          })()}
+          {(() => {
+            if (active4) {
+              return <div className='infoblock' onClick={() => updateActive4(false)} >
+                <h2>Quizzical</h2>
+                <div className='topRow'>
+                  <div className='square1'>
+                    <img src={project3} />
+                  </div>
+                  <div className='square2'>
+                    <img src={project3} />
+                  </div>
+                </div>
+                <div className='bottomRow'>
+                  <div className='square3'>
+                    <img src={project3} />
+                  </div>
+                  <div className='square4'>
+                    <img src={project3} />
+                  </div>
+                </div>
               </div>
-              <div className='flipBack1' onClick={() => updateFlipped4(false)}>
-                <p><strong>Quizzical:</strong> <br /><br />A quiz-based app allowing users to pick from a range of categories to test their knowledge on various subjects.
-                  <br /><br /> The questions come in the form of multiple-choice and provide a score on how the user did on completiton.<br /><br />
-A code-pared 48-hour hackathon using a <span>public API</span> from Open Trivia DB. Utilizing a <span>React JS front-end.</span></p>
+            } else if (!active1 && !active2 && !active3) {
+              return <div className='proj2' onClick={() => updateActive4(true)}>
+                <h3>Quizzical</h3>
+                <img src={project4} />
               </div>
-            </ReactCardFlip>
-          </div>
+            } else {
+              return
+            }
+          })()}
         </div>
       </div>
     </section>
-  </main>
+  </main >
 
 
 
