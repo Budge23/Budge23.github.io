@@ -31,7 +31,7 @@ const Home = () => {
     <section className='intro'>
       <div className='title'>
 
-        <h5><Typist>Lee Burgess</Typist> <br /> Junior Software Developer - London</h5>
+        <h5><Typist>LEE BURGESS</Typist> <br /> <span>Junior Software Developer - London</span></h5>
         <a href='#about'>
           <img src={avatar} style={{ height: '30vh' }} />
         </a>
@@ -42,9 +42,7 @@ const Home = () => {
     <section className='top'>
       <section className='about' id='about'>
         <div className='name'>
-          <h1>LEE BURGESS</h1>
-          <h3>JUNIOR SOFTWARE DEVELOPER</h3>
-
+        
         </div>
         <div className='aboutMe'>
           <h2>PROFILE</h2>
