@@ -25,7 +25,7 @@ const Home = () => {
   const [active4, updateActive4] = useState(false)
 
   console.log(!active2 || !active3 || !active4)
-
+  console.log('drop me an email at lee@leejburgess.co.uk')
 
   return <main>
     <section className='intro'>
@@ -281,7 +281,7 @@ I believe that my combination of sales and software capabilities gives me a uniq
                       Responsible for the entire app, my key focuses were on creating an intelligent AI system which would base its choices on previous data and not just select at random. When placing the ships the users are able to drag and drop them into areas of their choice both horizontal and vertical.
                       <br /> <br />
                       On the completion of this game, the user receives a report of how they fared during the game and how many moves it took to beat or be beaten by the AI.
-</p>
+                    </p>
 
                   </div>
                   <div className='square2'>
