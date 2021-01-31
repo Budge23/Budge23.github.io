@@ -3,14 +3,14 @@ import Typist from 'react-typist'
 import project1 from '../img/projects/8bit-battleships.png'
 import project2 from '../img/projects/Quizzical.png'
 import project3 from '../img/projects/FindaPint.png'
-import project4 from '../img/projects/Spoondr.png'
+import project4 from '../img/projects/Pear.png'
 import avatar from '../img/portfolio.png'
 
 import FP1 from '../img/projects/findapint/fp1.png'
 import FP2 from '../img/projects/findapint/fp2.png'
 
-import SP1 from '../img/projects/spoondr/sp1.png'
-import SP2 from '../img/projects/spoondr/sp2.png'
+import SP1 from '../img/projects/spoondr/pr1.png'
+import SP2 from '../img/projects/spoondr/pr2.png'
 
 import BS1 from '../img/projects/battleships/bs1.png'
 import BS2 from '../img/projects/battleships/bs2.png'
@@ -197,7 +197,7 @@ I believe that my combination of sales and software capabilities gives me a uniq
           {(() => {
             if (active2) {
               return <div className='infoblock' >
-                <h2>Spoondr</h2>
+                <h2>Pear</h2>
                 <div className='topRow'>
                   <div className='square1'>
                     <p>
@@ -256,7 +256,7 @@ I believe that my combination of sales and software capabilities gives me a uniq
               </div>
             } else if (!active1 && !active3 && !active4) {
               return <div className='proj4' onClick={() => updateActive2(true)}>
-                <h3>Spoondr</h3>
+                <h3>Pear</h3>
                 <img src={project4} />
               </div>
             } else {

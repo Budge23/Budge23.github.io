@@ -411,4 +411,19 @@ body {
       padding: 0.5em;
     }
   }
+
+  .s-port {
+    display: flex;
+    flex-direction: column;
+    flex: 1.5;
+    margin: 2em;
+    margin-right: 2em;
+    margin-top: 5%;
+    justify-content: center;
+    justify-content: flex-start;
+    text-align: center;
+  }
+  
+
+
 }
